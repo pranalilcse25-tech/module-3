@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    background-color: white;
+}
+
+.title {
+    text-align: center;
+}
+
+.form-container {
+    width: 400px;
+    margin: 30px auto;   
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.group input {
+    width: auto;
+}
+
+.buttons {
+    margin-top: 15px;
+    text-align: center;
+}
