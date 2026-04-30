@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+<h2 class="title">Student Feedback Form</h2>
+
+<form class="form-container">
+
+<label>Full Name:</label>
+<input type="text" name="name" required>
+
+<label>Email:</label>
+<input type="email" name="email" required>
+
+<label>Course Name:</label>
+<select name="course">
+    <option>Web Dev</option>
+    <option>Chemistry</option>
+    <option>Maths</option>
+    <option>EGD</option>
+</select>
+
+<label>1. Rate the Course:</label>
+<input type="range" name="course rating" min="1" max="5" value="3">
+
+<label>2. Rate the faculty's teaching method:</label>
+<input type="range" name="instructor" min="1" max="5" value="3">
+
+<label>3. Rate Study Material provided:</label>
+<input type="range" name="material" min="1" max="5" value="3">
+
+<label>4. Course Difficulty:</label>
+<div class="group">
+    <input type="radio" name="difficulty" value="easy" required> Easy
+    <input type="radio" name="difficulty" value="medium"> Medium
+    <input type="radio" name="difficulty" value="hard"> Hard
+</div>
+
+<label>5. Involvement in problem solving:</label>
+<div class="group">
+    <input type="radio" name="involvement" value="easy" required> Easy
+    <input type="radio" name="involvement" value="medium"> Medium
+    <input type="radio" name="involvement" value="hard"> Hard
+</div>
+
+<label>6. Implementation and prelab:</label>
+<div class="group">
+    <input type="radio" name="implementation" value="easy" required> Easy
+    <input type="radio" name="implementation" value="medium"> Medium
+    <input type="radio" name="implementation" value="hard"> Hard
+</div>
+
+<label>7. Teacher's encouragement:</label>
+<div class="group">
+    <input type="radio" name="encouragement" value="easy" required> Easy
+    <input type="radio" name="encouragement" value="medium"> Medium
+    <input type="radio" name="encouragement" value="hard"> Hard
+</div>
+
+<label>8. Coverage of syllabus:</label>
+<div class="group">
+    <input type="radio" name="coverage" value="before_time" required> Before Time
+    <input type="radio" name="coverage" value="on_time"> On Time
+</div>
+
+<label>9. Ability to solve practice sheet:</label>
+<div class="group">
+    <input type="radio" name="ability" value="easy" required> Easy
+    <input type="radio" name="ability" value="medium"> Medium
+    <input type="radio" name="ability" value="hard"> Hard
+</div>
+
+<label>10. What did you like about the course?</label>
+<textarea name="like" rows="4"></textarea>
+
+<label>11. What can be improved?</label>
+<textarea name="improve" rows="4"></textarea>
+
+<label>12. Would you recommend this course?</label>
+<div class="group">
+    <input type="radio" name="recommend" value="yes" required> Yes
+    <input type="radio" name="recommend" value="no"> No
+</div>
+
+<div class="buttons">
+    <input type="submit" value="Submit Feedback">
+    <input type="reset" value="Reset Form">
+</div>
+</form>
+<script src = "scriptt.js"></script>
+</body>
+</html>
